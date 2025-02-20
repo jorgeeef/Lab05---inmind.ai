@@ -1,0 +1,11 @@
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.deps.json
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\bin\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.AssemblyInfo.cs
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\refint\DDDProject.Domain.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Domain\obj\Debug\net8.0\ref\DDDProject.Domain.dll

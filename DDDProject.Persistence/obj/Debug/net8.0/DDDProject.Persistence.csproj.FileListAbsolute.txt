@@ -1,0 +1,17 @@
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.deps.json
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.runtimeconfig.json
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Persistence.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\bin\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.AssemblyInfo.cs
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProje.A0A24CAC.Up2Date
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\refint\DDDProject.Persistence.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\DDDProject.Persistence.genruntimeconfig.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Persistence\obj\Debug\net8.0\ref\DDDProject.Persistence.dll
