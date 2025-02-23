@@ -1063,6 +1063,20 @@
           "bin/placeholder/DDDProject.Domain.dll": {}
         }
       },
+      "DDDProject.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DDDProject.Domain": "1.0.0",
+          "DDDProject.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDProject.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDProject.Infrastructure.dll": {}
+        }
+      },
       "DDDProject.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3339,6 +3353,11 @@
       "path": "../DDDProject.Domain/DDDProject.Domain.csproj",
       "msbuildProject": "../DDDProject.Domain/DDDProject.Domain.csproj"
     },
+    "DDDProject.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../DDDProject.Infrastructure/DDDProject.Infrastructure.csproj",
+      "msbuildProject": "../DDDProject.Infrastructure/DDDProject.Infrastructure.csproj"
+    },
     "DDDProject.Persistence/1.0.0": {
       "type": "project",
       "path": "../DDDProject.Persistence/DDDProject.Persistence.csproj",
@@ -3347,6 +3366,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DDDProject.Infrastructure >= 1.0.0",
       "DDDProject.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.2",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -3380,6 +3400,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Infrastructure\\DDDProject.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Infrastructure\\DDDProject.Infrastructure.csproj"
+            },
             "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Persistence\\DDDProject.Persistence.csproj": {
               "projectPath": "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Persistence\\DDDProject.Persistence.csproj"
             }
