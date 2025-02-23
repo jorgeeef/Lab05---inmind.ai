@@ -15,6 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DDDProject.Application\DDDProject.Application.csproj" />
       <ProjectReference Include="..\DDDProject.Infrastructure\DDDProject.Infrastructure.csproj" />
       <ProjectReference Include="..\DDDProject.Persistence\DDDProject.Persistence.csproj" />
     </ItemGroup>

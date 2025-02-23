@@ -1,4 +1,5 @@
 using DDD.Persistence;
+using DDDProject.Application.Services;
 using DDDProject.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructure();
+builder.Services.AddScoped<CourseService>();
+builder.Services.AddScoped<StudentService>();
+builder.Services.AddScoped<TeacherService>();
+builder.Services.AddScoped<EnrollmentService>();
+builder.Services.AddScoped<GradeService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
