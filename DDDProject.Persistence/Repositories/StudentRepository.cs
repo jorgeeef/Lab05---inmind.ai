@@ -22,4 +22,21 @@ public class StudentRepository : IStudentRepository
     {
         return await _context.Students.FindAsync(id);
     }
+    
+    public async Task<double> CalculateAverage(Guid studentId)
+    {
+        var grades = await _context.Grades
+            .Where(g => g.StudentId == studentId)
+            .ToListAsync();
+
+        if (grades.Count == 0) return 0;
+
+        return grades.Average(g => g.Value);
+    }
+
+    public async Task UpdateAsync(Student student)
+    {
+        _context.Students.Update(student);
+        await _context.SaveChangesAsync();
+    }
 }

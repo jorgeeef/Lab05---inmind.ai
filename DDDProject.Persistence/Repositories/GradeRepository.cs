@@ -19,4 +19,15 @@ public class GradeRepository: IGradeRepository
             .Where(g => g.StudentId == studentId)
             .ToListAsync();
     }
+    
+    public async Task AddAsync(Grade grade)
+    {
+        await _context.Grades.AddAsync(grade);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task<Grade?> GetByIdAsync(Guid id)
+    {
+        return await _context.Grades.FindAsync(id);
+    }
 }

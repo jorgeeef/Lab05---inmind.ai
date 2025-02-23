@@ -6,4 +6,7 @@ public interface IStudentRepository
 {         
     Task<IEnumerable<Student>> GetAllAsync();
     Task<Student> GetByIdAsync(Guid id);
+    
+    Task<double> CalculateAverage(Guid studentId);
+    Task UpdateAsync(Student student);
 }

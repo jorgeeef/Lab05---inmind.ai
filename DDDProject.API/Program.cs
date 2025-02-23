@@ -2,11 +2,18 @@ using DDD.Persistence;
 using DDDProject.Application.Services;
 using DDDProject.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using MediatR;
+using System.Reflection;
+using DDD.Persistence.Repositories;
+using DDDProject.Domain.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
