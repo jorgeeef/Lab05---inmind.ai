@@ -12,6 +12,12 @@ public class StudentRepository : IStudentRepository
     {
         _context = context;
     }
+    
+    public async Task AddAsync(Student student)
+    {
+        _context.Students.Add(student);
+        await _context.SaveChangesAsync();
+    }
 
     public async Task<IEnumerable<Student>> GetAllAsync()
     {

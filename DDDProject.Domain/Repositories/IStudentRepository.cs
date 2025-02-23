@@ -4,6 +4,7 @@ namespace DDDProject.Domain.Repositories;
 
 public interface IStudentRepository
 {         
+    Task AddAsync(Student student);
     Task<IEnumerable<Student>> GetAllAsync();
     Task<Student> GetByIdAsync(Guid id);
     
