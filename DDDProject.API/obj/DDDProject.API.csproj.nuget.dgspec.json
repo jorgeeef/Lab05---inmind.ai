@@ -241,6 +241,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Application\\DDDProject.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Application\\DDDProject.Application.csproj"
+              },
               "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Domain\\DDDProject.Domain.csproj": {
                 "projectPath": "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.Domain\\DDDProject.Domain.csproj"
               },
