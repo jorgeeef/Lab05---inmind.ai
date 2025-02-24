@@ -1,0 +1,16 @@
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\bin\Debug\net8.0\DDDProject.Application.deps.json
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\bin\Debug\net8.0\DDDProject.Application.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\bin\Debug\net8.0\DDDProject.Application.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\bin\Debug\net8.0\DDDProject.Domain.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\bin\Debug\net8.0\DDDProject.Domain.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.AssemblyInfo.cs
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.sourcelink.json
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProje.FEBA4640.Up2Date
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\refint\DDDProject.Application.dll
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\DDDProject.Application.pdb
+C:\Users\user\RiderProjects\DDDProject\DDDProject.Application\obj\Debug\net8.0\ref\DDDProject.Application.dll
