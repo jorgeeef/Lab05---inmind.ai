@@ -6,6 +6,9 @@ using MediatR;
 using System.Reflection;
 using DDD.Persistence.Repositories;
 using DDDProject.Domain.Repositories;
+using Hangfire;
+using Hangfire.MemoryStorage;
+using Hangfire.PostgreSql;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +22,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructure();
+builder.Services.AddHangfire(config => config.UseMemoryStorage());
+builder.Services.AddHangfireServer();
 builder.Services.AddApplication();
+
+
+builder.Services.AddHangfire(config =>
+{
+    config.UsePostgreSqlStorage("Host=localhost;Database=UMS;Username=user;Password=user");
+});
+builder.Services.AddHangfireServer();
 
 builder.Services.AddStackExchangeRedisCache(options =>
 {

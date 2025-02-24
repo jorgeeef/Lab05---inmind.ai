@@ -10,4 +10,6 @@ public interface IStudentRepository
     
     Task<double> CalculateAverage(Guid studentId);
     Task UpdateAsync(Student student);
+    Task<List<Student>> GetAllWithGradesAsync(); 
+
 }

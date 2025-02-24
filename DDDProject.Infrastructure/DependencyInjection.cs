@@ -1,6 +1,7 @@
 ﻿using DDD.Persistence.Repositories;
 using DDDProject.Application.Services;
 using DDDProject.Domain.Repositories;
+using Hangfire;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DDDProject.Infrastructure;
@@ -26,4 +27,5 @@ public static class ServiceCollectionExtensions
         services.AddScoped<GradeService>();
         return services;
     }
+    
 }

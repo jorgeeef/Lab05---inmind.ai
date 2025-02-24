@@ -12,4 +12,8 @@
       <ProjectReference Include="..\DDDProject.Persistence\DDDProject.Persistence.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Hangfire.MemoryStorage" Version="1.8.1.1" />
+    </ItemGroup>
+
 </Project>

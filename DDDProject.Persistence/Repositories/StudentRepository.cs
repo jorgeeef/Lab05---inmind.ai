@@ -105,4 +105,14 @@ public class StudentRepository : IStudentRepository
         await _cache.RemoveAsync($"Student_{student.Id}");
         await _cache.RemoveAsync("Students_All");
     }
+    
+    public async Task<List<Student>> GetAllWithGradesAsync()
+    {
+        return await _context.Students
+            .Include(s => s.Enrollments)
+            .ThenInclude(e => e.Grades)
+            .AsNoTracking()
+            .ToListAsync();
+    }
+    
 }
