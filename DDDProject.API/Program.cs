@@ -1,3 +1,4 @@
+using System.Globalization;
 using DDD.Persistence;
 using DDDProject.Application.Services;
 using DDDProject.Infrastructure;
@@ -5,7 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using MediatR;
 using System.Reflection;
 using DDD.Persistence.Repositories;
+using DDDProject.API.Middlewares;
 using DDDProject.Domain.Repositories;
+using DDDProject.Infrastructure.Localization;
 using Hangfire;
 using Hangfire.MemoryStorage;
 using Hangfire.PostgreSql;
@@ -19,6 +22,22 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/ums-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization()
+    .AddDataAnnotationsLocalization(options =>
+    {
+        options.DataAnnotationLocalizerProvider = (type, factory) =>
+            factory.Create(typeof(SharedResource));
+    });
+
+var supportedCultures = new[]
+{
+    new CultureInfo("en"),
+    new CultureInfo("fr")
+};
+
+// Add middleware to the app builder pipeline
 
 
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
@@ -58,6 +77,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCultureMiddleware();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -926,6 +926,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Localization/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Localization.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Options": "9.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Localization.Abstractions/9.0.2": {
         "type": "package",
         "compile": {
@@ -2140,7 +2159,8 @@
           "DDDProject.Application": "1.0.0",
           "DDDProject.Domain": "1.0.0",
           "DDDProject.Persistence": "1.0.0",
-          "Hangfire.MemoryStorage": "1.8.1.1"
+          "Hangfire.MemoryStorage": "1.8.1.1",
+          "Microsoft.Extensions.Localization": "10.0.0-preview.1.25120.3"
         },
         "compile": {
           "bin/placeholder/DDDProject.Infrastructure.dll": {}
@@ -4193,6 +4213,25 @@
         "microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512",
         "microsoft.extensions.hosting.abstractions.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Localization/9.0.2": {
+      "sha512": "Rco1BcVnvcy4TrLLMBZfOhYTCWf6EgV5TSLTrkcwjFNaedrjiIhsLATAmpIjVkMaSKnLIoTF5jsYQ8kFlUwtCw==",
+      "type": "package",
+      "path": "microsoft.extensions.localization/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.dll",
+        "lib/net462/Microsoft.Extensions.Localization.xml",
+        "lib/net9.0/Microsoft.Extensions.Localization.dll",
+        "lib/net9.0/Microsoft.Extensions.Localization.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
+        "microsoft.extensions.localization.9.0.2.nupkg.sha512",
+        "microsoft.extensions.localization.nuspec"
       ]
     },
     "Microsoft.Extensions.Localization.Abstractions/9.0.2": {
@@ -6991,6 +7030,7 @@
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.2",
       "Microsoft.Extensions.Caching.Memory >= 9.0.2",
+      "Microsoft.Extensions.Localization >= 9.0.2",
       "Serilog.AspNetCore >= 9.0.0",
       "Serilog.Sinks.File >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -7082,6 +7122,10 @@
             "target": "Package",
             "version": "[9.0.2, )"
           },
+          "Microsoft.Extensions.Localization": {
+            "target": "Package",
+            "version": "[9.0.2, )"
+          },
           "Serilog.AspNetCore": {
             "target": "Package",
             "version": "[9.0.0, )"
@@ -7139,6 +7183,15 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.4.1 was resolved.",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Localization from 10.0.0-preview.1.25120.3 to 9.0.2. Reference the package directly from the project to select a different version. \r\n DDDProject.API -> DDDProject.Infrastructure -> Microsoft.Extensions.Localization (>= 10.0.0-preview.1.25120.3) \r\n DDDProject.API -> Microsoft.Extensions.Localization (>= 9.0.2)",
+      "libraryId": "Microsoft.Extensions.Localization",
       "targetGraphs": [
         "net8.0"
       ]

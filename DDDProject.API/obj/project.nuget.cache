@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "zjjYjDIWG6A=",
-  "success": true,
+  "dgSpecHash": "47ps1Dx6yhI=",
+  "success": false,
   "projectFilePath": "C:\\Users\\user\\RiderProjects\\DDDProject\\DDDProject.API\\DDDProject.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bouncycastle.cryptography\\2.5.0\\bouncycastle.cryptography.2.5.0.nupkg.sha512",
@@ -45,6 +45,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\9.0.0\\microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.0\\microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\9.0.0\\microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.localization\\9.0.2\\microsoft.extensions.localization.9.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\9.0.2\\microsoft.extensions.localization.abstractions.9.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging\\9.0.2\\microsoft.extensions.logging.9.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.2\\microsoft.extensions.logging.abstractions.9.0.2.nupkg.sha512",
@@ -134,6 +135,15 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.4.1 was resolved.",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Localization from 10.0.0-preview.1.25120.3 to 9.0.2. Reference the package directly from the project to select a different version. \r\n DDDProject.API -> DDDProject.Infrastructure -> Microsoft.Extensions.Localization (>= 10.0.0-preview.1.25120.3) \r\n DDDProject.API -> Microsoft.Extensions.Localization (>= 9.0.2)",
+      "libraryId": "Microsoft.Extensions.Localization",
       "targetGraphs": [
         "net8.0"
       ]

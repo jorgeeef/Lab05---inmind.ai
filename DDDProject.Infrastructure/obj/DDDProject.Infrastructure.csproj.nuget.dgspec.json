@@ -211,6 +211,10 @@
             "Hangfire.MemoryStorage": {
               "target": "Package",
               "version": "[1.8.1.1, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[10.0.0-preview.1.25120.3, )"
             }
           },
           "imports": [
